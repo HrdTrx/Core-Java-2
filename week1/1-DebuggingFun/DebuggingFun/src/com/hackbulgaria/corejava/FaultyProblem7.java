@@ -9,8 +9,9 @@ public class FaultyProblem7 {
         int low = 0;
         int high = array.length - 1;
 
-        int mid = (low + high) / 2;
+        
         while (high - low > 1) {
+            int mid = (low + high) / 2;
 
             if (element == array[mid]) {
                 return mid;
